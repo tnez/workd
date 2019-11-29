@@ -1,0 +1,26 @@
+{
+  "name": "@tnesland/workd",
+  "version": "0.0.0",
+  "author": "Travis Nesland <tnesland@gmail.com>",
+  "license": "ISC",
+  "description": "`workd` (pronounced worked)",
+  "keywords": [
+    "cli",
+    "workflow",
+    "scripts"
+  ],
+  "main": "./lib/index.js",
+  "bin": {
+    "workd": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.4",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  }
+}
