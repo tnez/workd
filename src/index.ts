@@ -48,6 +48,21 @@ cli
     console.log(data.mapping[key] || data.mapping[DEFAULT_SPACE_KEY])
   })
 
+cli
+  .command('set <dir>')
+  .description('Set working directory')
+  .option('-s, --space <space>', 'workspace key')
+  .action((dir: string, opts: { space?: string }) => {
+    const { created, mapping } = readData()
+    const key = opts.space || DEFAULT_SPACE_KEY
+    const data = {
+      created,
+      modified: CURRENT_TIMESTAMP,
+      mapping: { ...mapping, [key]: dir }
+    }
+    writeData(data)
+  })
+
 cli.parse(process.argv)
 
 if(!process.argv.slice(2).length) {
@@ -61,4 +76,9 @@ function readData(): PersistedData {
   } else {
     return PERSISTED_DATA_STUB
   }
+}
+
+function writeData(data: PersistedData): void {
+  const content = JSON.stringify(data)
+  fs.writeFileSync(PERSISTED_DATA_FILE_PATH, content)
 }
