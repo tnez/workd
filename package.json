@@ -2,7 +2,7 @@
   "name": "@tnesland/workd",
   "version": "0.0.0",
   "author": "Travis Nesland <tnesland@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "description": "`workd` (pronounced worked)",
   "keywords": [
     "cli",
