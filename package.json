@@ -1,6 +1,6 @@
 {
   "name": "workd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Travis Nesland <tnesland@gmail.com>",
   "license": "MIT",
   "description": "`workd` (pronounced worked)",
@@ -17,7 +17,9 @@
   "bin": {
     "workd": "lib/index.js"
   },
-  "files": ["/lib/**/*"],
+  "files": [
+    "/lib/**/*"
+  ],
   "scripts": {
     "build": "tsc -p .",
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
