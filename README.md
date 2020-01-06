@@ -16,7 +16,7 @@ _YMMV Disclaimer: this software has not been used enough in the wild to thorough
 This is a node package that you can install globally via `npm` or `yarn`.
 
 ```sh
-npm install --global @tnesland/workd
+npm install --global workd
 ```
 
 ### Usage
