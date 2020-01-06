@@ -1,7 +1,7 @@
 <div>
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/tnez/workd/blob/master/LICENSE)
-[![npm package](https://img.shields.io/npm/v/@tnesland/workd/latest.svg)](https://npmjs.com/package/@tnesland/workd)
+[![npm package](https://img.shields.io/npm/v/workd/latest.svg)](https://npmjs.com/package/workd)
 
 </div>
 
