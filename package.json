@@ -1,5 +1,5 @@
 {
-  "name": "@tnesland/workd",
+  "name": "workd",
   "version": "0.0.0",
   "author": "Travis Nesland <tnesland@gmail.com>",
   "license": "MIT",
@@ -9,6 +9,10 @@
     "workflow",
     "scripts"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tnez/workd"
+  },
   "main": "./lib/index.js",
   "bin": {
     "workd": "./lib/index.js"
